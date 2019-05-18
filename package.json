@@ -16,7 +16,7 @@
     "fs-extra": "0.8.x",
     "npm": "1.4.x",
     "semver": "2.2.x",
-    "tar": "0.1.x",
+    "tar": "1.0.0",
     "request": "2.36.x",
     "express": "4.0.x",
     "body-parser": "1.0.x",

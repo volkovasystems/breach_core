@@ -4,7 +4,7 @@
   "author": {
     "name": "Stanislas Polu",
     "email": "polu.stanislas@gmail.com",
-    "url": "http://github.com/spolu" 
+    "url": "http://github.com/spolu"
   },
   "version": "0.3.20-alpha.5",
   "dependencies": {
@@ -17,17 +17,18 @@
     "npm": "1.4.x",
     "semver": "2.2.x",
     "tar": "0.1.x",
-    "request": "2.36.x",
+    "request": "2.82.0",
     "express": "4.0.x",
     "body-parser": "1.0.x",
     "method-override": "1.0.x",
     "socket.io": "1.0.x",
     "openpgp": "0.6.x",
-    "tail": "0.3.x"
+    "tail": "0.3.x",
+    "@snyk/protect": "latest"
   },
-  "repository" : { 
-    "type" :  "git",
-    "url" :   "http://github.com/breach/breach_core.git" 
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/breach/breach_core.git"
   },
   "bugs": {
     "url": "https://github.com/breach/breach_core/issues"
@@ -44,5 +45,10 @@
   },
   "auto_update": {
     "url": "https://data.breach.cc/update"
-  }
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
